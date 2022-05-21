@@ -1,0 +1,70 @@
+dotnet new mvc --auth Individual -o MyTodoApp -f net5.0  // --auth ja cria login
+
+jonatha@teste.com
+LtA62EoyQv!V
+
+teste@balta.io
+LtA62EoyQv!V
+
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design //necessario para o comando seguinte
+
+//produtividade
+//gerar codigo de forma automatica
+//gerar paginas crud baseado no Todo
+dotnet-aspnet-codegenerator controller -name TodoController -dc ApplicationDbContext -m Todo --useDefaultLayout --useSqlite --referenceScriptLibraries
+
+//tive que executar esse primeiro
+dotnet tool install --global dotnet-aspnet-codegenerator
+
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.0
+
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 5.0
+
+
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.0.5
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 5.0
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+//ou esse
+dotnet-aspnet-codegenerator controller -name TodoController -dc ApplicationDbContext -m Todo --useDefaultLayout -sqlite --referenceScriptLibraries
+
+
+dotnet-aspnet-codegenerator controller {-name} TodoController -dc ApplicationDbContext -m Todo --useDefaultLayout -sqlite --referenceScriptLibraries
+
+dotnet-aspnet-codegenerator controller -name TodoController -dc ApplicationDbContext -m Todo --useDefaultLayout -sqlserver --referenceScriptLibraries
+
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite.Design --version 1.1.6
+
+
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.5
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer // usei esse
+
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0
+
+
+//windows terminal so pra win 10
+
+UseSqlite --app.db
+
+
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0.5
+
+
+//t4 templates
+
+tbm pode mudar de boottrap para muai
+
+
+//https://bootswatch.com/  --- themas para bootstrap como o asp.net ja trabalha com bootstrap por padrao
+
+
+
+referencias
+https://youtu.be/NFQAj5bCgd8
+Como fazer um App com ASP.NET (Completo com login, EF e SQLite) | por André Baltieri #balta
+Neste vídeo vamos criar um App completo com ASP.NET, com Login/Logout, usando ASP.NET Identity e EF Core com SQLite como banco de dados.
+
+Vamos enteder recursos como Scaffold e T4 Templates e ver como podemos criar Apps de forma simples e objetiva.
+
+
+stackoverflow e google
+https://imasters.com.br/dotnet/asp-net-core-solucionando-erros-de-conversao-formatacao-com-localization
